@@ -1,0 +1,13 @@
+void setup(){
+    pinMode(10 ,OUTPUT);
+    pinMode(9 ,OUTPUT);
+    pinMode(7 ,INPUT);
+}
+void loop(){
+    
+    int botao;
+    botao = digitalRead(7);
+    
+    digitalWrite(10 , botao);
+    digitalWrite(9 , !botao);  
+}
